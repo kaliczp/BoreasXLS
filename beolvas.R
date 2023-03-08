@@ -1,3 +1,5 @@
+Sys.setenv(TZ="UTC")
+
 filenames <- dir("Adatok")
 library(readxl)
 
