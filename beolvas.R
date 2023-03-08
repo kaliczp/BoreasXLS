@@ -18,7 +18,10 @@ import.Boreas.xls <- function(filename, sheet, xlscolumn = 2) {
 BorArbor <- import.Boreas.xls(filename = paste0("Adatok/", filenames[1]),
                               sheet = "Arborétum"
                               )
-
-BorArbor <- import.Boreas.xls(filename = paste0("Adatok/", filenames[3]),
-                              sheet = "Arborétum"
-                              )
+for(tti in 2:length(filenames)) {
+    print(tti)
+    BorArbor <- c(BorArbor, import.Boreas.xls(filename = paste0("Adatok/", filenames[tti]),
+                                              sheet = "Arborétum"
+                                              )
+                  )
+}
