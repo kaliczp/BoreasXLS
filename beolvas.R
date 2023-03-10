@@ -1,6 +1,6 @@
 Sys.setenv(TZ="UTC")
 
-filenames <- dir("Adatok")
+filenames <- dir("Adatok", pattern = "SoE")
 library(readxl)
 
 import.Boreas.xls <- function(filename, sheet, xlscolumn = 2) {
