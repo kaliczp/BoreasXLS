@@ -13,6 +13,7 @@ BorArbor[111808:111811]
 BorArbor['2023-02-16 09:30/2023-02-16 09:40'] # 09:31 additional
 
 ## Daylightsaving
+## Change in xlsx at DST change 02:00 -> 03:00
 BorArbor[12390:12395]
 BorArbor['2021-03-28 00:50/2021-03-28 01:10']
 BorArbor['2021-03-28 01:50/2021-03-28 03:10']
