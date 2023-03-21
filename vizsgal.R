@@ -21,6 +21,7 @@ BorArbor[64811:64814]
 BorArbor['2022-03-27 00:50/2022-03-27 01:10']
 BorArbor['2022-03-27 01:50/2022-03-27 03:10']
 ## What about winter change? Missing!!
+## From webpage "Elemi adatlista" is not contains data too.
 BorArbor[is.na(BorArbor)]
 BorArbor['2021-10-31 01:50/2021-10-31 03:10']
 BorArbor['2022-10-30 01:50/2022-10-30 03:10']
