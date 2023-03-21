@@ -12,7 +12,7 @@ import.Boreas.xls <- function(filename, sheet, xlscolumn = 2) {
     rawdatetime <- as.POSIXct(rawdatetime)
     full.date <- seq.POSIXt(rawdatetime[1], rawdatetime[length(rawdatetime)], by = "10 min")
     if(length(full.date) != nrow(rawdata)) {
-        warning("Different length of databases")
+        warning(paste("Generated and measured timestamps are differ in", filename))
     }
     raw.xts <- xts(rawdata[, xlscolumn], rawdatetime)
     generated.xts <- xts(rep(NA, length(full.date)), full.date)
