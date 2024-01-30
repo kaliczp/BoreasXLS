@@ -1,4 +1,4 @@
-which(diff(index(BorArbor)) != 600)
+which(diff(index(BorArbor)) != 10)
 BorArbor[12294:12298]
 BorArbor['2021-03-27 09:00/2021-03-27 09:10'] # 09:01 additional
 BorArbor[15470:15473]
@@ -25,3 +25,5 @@ BorArbor['2022-03-27 01:50/2022-03-27 03:10']
 BorArbor[is.na(BorArbor)]
 BorArbor['2021-10-31 01:50/2021-10-31 03:10']
 BorArbor['2022-10-30 01:50/2022-10-30 03:10']
+
+## 2023-03-26 02:10–03:00-ig missing
